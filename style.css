@@ -290,6 +290,7 @@ strong {
   .navigation-list {
     flex-wrap: wrap;
     justify-content: center;
+    gap:40px;
   }
 
   .form-container {
@@ -318,6 +319,7 @@ strong {
   .navigation-list {
     flex-direction: column;
     gap: 15px;
+     margin-right: 30px;
   }
 
   .logo {
