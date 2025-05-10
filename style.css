@@ -131,6 +131,7 @@ a {
 }
 strong {
   color: #050000;
+   font-size: larger;
 }
 
 
@@ -138,9 +139,6 @@ strong {
   margin-left: 5rem;
   list-style: none;
   max-width: 50em;
-}
-strong {
-  font-size: larger;
 }
 
 .paragraph-end {
@@ -151,9 +149,6 @@ strong {
   color: rgb(250, 250, 243);
 }
 
-.respect {
-  color: #f6f4f4;
-}
 .background-photo {
   margin-top: 30px;
   margin-bottom: 30px;
