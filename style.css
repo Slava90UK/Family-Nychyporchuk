@@ -120,14 +120,19 @@ a {
 }
 
 .h2text {
-  color: rgba(0, 0, 0);
+  color: #050000;
 }
 
 .chronology {
   text-align: left;
   padding: 30px 30px;
   display: inline-block;
+   color: rgb(1, 248, 207);
 }
+strong {
+  color: #050000;
+}
+
 
 .list {
   margin-left: 5rem;
@@ -147,7 +152,7 @@ strong {
 }
 
 .respect {
-  color: rgb(232, 232, 17);
+  color: #f6f4f4;
 }
 .background-photo {
   margin-top: 30px;
