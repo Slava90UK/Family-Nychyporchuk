@@ -153,7 +153,7 @@ strong {
   margin-top: 30px;
   margin-bottom: 30px;
   background-image: url("photo_7.jpg");
-  border-radius: px;
+  border-radius: 8px;
   display: inline-block;
   background-size: cover;
 }
