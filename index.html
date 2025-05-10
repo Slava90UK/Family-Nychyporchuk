@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta description="life-history" name="private-history" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("contactForm");
+
+        form.addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          try {
+            const response = await fetch(form.action, {
+              method: "POST",
+              body: new FormData(form),
+              headers: {
+                Accept: "application/json",
+              },
+            });
+
+            if (response.ok) {
+              const successMsg = document.createElement("div");
+              successMsg.textContent = "The message has been sent!";
+              form.appendChild(successMsg);
+              form.reset();
+            } else {
+              console.error("Sending error");
+            }
+          } catch (error) {
+            console.error("Network error:", error);
+          }
+        });
+      });
+    </script>
+    <title>My history</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <div class="logo-div">
+            <input type="checkbox" id="logo-toggle" class="logo-toggle" />
+            <label for="logo-toggle">
+              <a href="#" target="_blank"
+                ><img src="logo.png" alt="logo" width="50px" class="logo"
+              /></a>
+            </label>
+          </div>
+
+          <a href="#chron"><li class="nav-li">Chronology</li></a>
+
+          <a href="#form"><li class="nav-li">Сontact-form</li></a>
+          <a href="#contacts"><li class="nav-li">Contacts</li></a>
+        </ul>
+      </nav>
+      <h1 class="start-story">The Nychyporchuk family</h1>
+      <h3 class="start-story2">
+        A few beautiful moments captured in photographs.
+      </h3>
+    </header>
+    <main id="main">
+      <div class="photos-family">
+        <a href="photo_1.jpg" target="_blank">
+          <div class="photo">
+            <img src="photo_1.jpg" alt="family photo" /></div
+        ></a>
+        <a href="photo_2.jpg" target="_blank">
+          <div class="photo">
+            <img src="photo_2.jpg" alt="family photo" /></div
+        ></a>
+        <a href="photo_3.jpg" target="_blank"
+          ><div class="photo">
+            <img src="photo_3.jpg" alt="family photo" /></div
+        ></a>
+        <a href="photo_4.jpg" target="_blank">
+          <div class="photo">
+            <img src="photo_4.jpg" alt="family photo" /></div
+        ></a>
+        <a href="photo_5.jpg" target="_blank"
+          ><div class="photo">
+            <img src="photo_5.jpg" alt="family photo" /></div
+        ></a>
+        <a href="photo_6.jpg" target="_blank"
+          ><div class="photo">
+            <img src="photo_6.jpg" alt="family photo" /></div
+        ></a>
+        <p class="description-photo">
+          In the photos, I am my wife Alеna and our son Sasha in different
+          European countries.
+        </p>
+      </div>
+
+      <div class="size-sentence">
+        <div class="background-photo">
+          <div class="part2" id="chron">
+            <h2 class="h2text">Here is the chronology of our family's life:</h2>
+            <ul class="chronology">
+              <li class="list">
+                <strong>2018</strong> - Our acquaintance began with a Facebook
+                conversation.
+              </li>
+              <br />
+              <li class="list">
+                <strong>2019</strong> - We got married. It was a wonderful
+                honeymoon year.
+              </li>
+              <br />
+              <li class="list">
+                <strong>2020</strong> - We both lost our jobs this year and had
+                a great time at home for about six months. It was the year of
+                the coronavirus.
+              </li>
+              <br />
+              <li class="list">
+                <strong>2021</strong> - This year, our rose-colored glasses fell
+                off, and we began to see each other's flaws.
+              </li>
+              <br />
+              <li class="list">
+                <strong>2022</strong> - This year was a year of loss, upheaval
+                and the outbreak of war in Ukraine. But our marriage has only
+                gotten stronger.
+              </li>
+              <br />
+              <li class="list">
+                <strong>2023</strong> - We have adjusted several areas of our
+                lives. Our personal relationship was like the waves of the sea.
+              </li>
+              <br />
+              <li class="list">
+                <strong>2024</strong> - This year, God has given us a son. We
+                have changed our place of residence several times.
+              </li>
+              <br />
+              <li class="list">
+                <strong>2025</strong> - We've been through a lot together. We
+                are very glad that we have each other. We love each other and
+                wish you the same.
+              </li>
+            </ul>
+          </div>
+          <p class="paragraph-end">
+            We have a deep understanding that each of us can make this world a
+            little better if we start with ourselves. This principle is the key
+            to success in any relationship and in any business. We always try to
+            appreciate every person who comes our way. And if you're reading
+            this, we wish God would bless you!
+            <em class="respect">With respect from Slava and Alyona!</em>
+          </p>
+        </div>
+      </div>
+      <div class="form-container">
+        <div class="contact-form" id="form">
+          <form
+            id="contactForm"
+            action="https://formspree.io/f/xdkgdrep"
+            method="POST"
+          >
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Input your email"
+              required
+            />
+
+            <label for="message">Message:</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Write your message for us"
+              rows="5"
+              required
+            ></textarea>
+
+            <button class="button" type="submit">Send</button>
+          </form>
+        </div>
+        <div class="form-image">
+          <img
+            src="Ichthys.PNG"
+            width="350px"
+            atl="Ichthys"
+            id="animated-image"
+          />
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Contacts:</h3>
+
+          <label
+            >Email:
+            <p id="contacts" class="color-contact">slava19901703@gmail.com</p>
+          </label>
+          <label
+            >Number phone:
+            <p class="color-contact">+380685982634 (Viber)</p></label
+          >
+        </div>
+        <div class="footer-section">
+          <h3>Social networks:</h3>
+          <div class="social-link">
+            <a
+              href="https://www.facebook.com/ViacheslavNychyporchuk"
+              target="_blank"
+              ><img src="facebook-icon.png" alt="Facebook"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2025 Nychyporchuk Family website. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
