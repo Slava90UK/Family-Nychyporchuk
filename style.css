@@ -297,6 +297,10 @@ strong {
     gap:40px;
   }
 
+    .chronology {
+    text-align: left;
+  }
+
   .form-container {
     flex-direction: column;
     gap: 20px;
@@ -330,6 +334,10 @@ strong {
     width: 50px;
   }
 
+    .chronology {
+    text-align: left;
+  }
+
   .photos-family {
     padding: 10px;
   }
@@ -360,6 +368,10 @@ strong {
 
   .contact-form {
     padding: 15px;
+  }
+
+    .chronology {
+    text-align: left;
   }
 
   .contact-form input,
