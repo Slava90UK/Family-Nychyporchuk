@@ -127,32 +127,32 @@ a {
   text-align: left;
   padding: 30px 30px;
   display: inline-block;
-   color: rgb(1, 248, 207);
-}
-strong {
-  color: #050000;
-   font-size: larger;
+  color: rgb(9, 237, 195);
 }
 
+strong {
+  color: #050000;
+}
 
 .list {
   margin-left: 5rem;
   list-style: none;
   max-width: 50em;
 }
+strong {
+  font-size: larger;
+}
 
 .paragraph-end {
   font: 1em sans-serif;
-  color: rgba(0, 0, 0, 0.7);
   display: inline-block;
   max-width: 65rem;
-  color: rgb(250, 250, 243);
+  color: #f6f4f4;
 }
 
 .respect {
   color: rgb(9, 237, 195);
 }
-
 .background-photo {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -294,14 +294,7 @@ strong {
   .navigation-list {
     flex-wrap: wrap;
     justify-content: center;
-    gap:40px;
-  }
-
-    .chronology {
-    text-align: left;
-  padding: 30px 30px;
-  display: inline-block;
-   color: rgb(1, 248, 207);
+    gap: 40px;
   }
 
   .form-container {
@@ -330,18 +323,17 @@ strong {
   .navigation-list {
     flex-direction: column;
     gap: 15px;
-     padding: 0px 30px 0px 30px;
+    /* padding-left: 30px;
+    padding-right: 30px; */
+    padding: 0px 30px 0px 30px;
+  }
+
+  .chronology {
+    text-align: left;
   }
 
   .logo {
     width: 50px;
-  }
-
-    .chronology {
-  text-align: left;
-  padding: 30px 30px;
-  display: inline-block;
-   color: rgb(1, 248, 207);
   }
 
   .photos-family {
@@ -365,35 +357,7 @@ strong {
     width: 100%;
     height: 25em;
   }
-}
 
-@media (max-width: 480px) {
-  .start-story {
-    font-size: 1.5rem;
-  }
-
-  .contact-form {
-    padding: 15px;
-  }
-
-    .chronology {
-    text-align: left;
-  padding: 30px 30px;
-  display: inline-block;
-   color: rgb(1, 248, 207);
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    width: 85%;
-  }
-  #animated-image {
-    width: 100%;
-    height: 15em;
-  }
-}
-
-@media (max-width: 768px) {
   .footer-content {
     gap: 20px;
   }
@@ -409,6 +373,27 @@ strong {
 }
 
 @media (max-width: 480px) {
+  .start-story {
+    font-size: 1.5rem;
+  }
+
+  .chronology {
+    text-align: left;
+  }
+
+  .contact-form {
+    padding: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 85%;
+  }
+  #animated-image {
+    width: 100%;
+    height: 15em;
+  }
+
   .footer-content {
     flex-direction: column;
     align-items: center;
