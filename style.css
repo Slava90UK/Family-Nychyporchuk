@@ -299,6 +299,9 @@ strong {
 
     .chronology {
     text-align: left;
+  padding: 30px 30px;
+  display: inline-block;
+   color: rgb(1, 248, 207);
   }
 
   .form-container {
@@ -335,7 +338,10 @@ strong {
   }
 
     .chronology {
-    text-align: left;
+  text-align: left;
+  padding: 30px 30px;
+  display: inline-block;
+   color: rgb(1, 248, 207);
   }
 
   .photos-family {
@@ -372,6 +378,9 @@ strong {
 
     .chronology {
     text-align: left;
+  padding: 30px 30px;
+  display: inline-block;
+   color: rgb(1, 248, 207);
   }
 
   .contact-form input,
